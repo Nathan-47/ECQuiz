@@ -18,18 +18,22 @@
 </head>
 <body>
 
-  <div class="container fade">
-    <div class="row">
-      <div class="wrapper">
+<div class="container fade">
+  <div class="row">
+    <div class="start-wrapper">
       <img class="quiz-logo" src="../images/bcusu_logo.png" alt="bcusu logo"/>
+
       <div id="question" class="question"></div>
 
-    <div class="button-wrapper">
-        <div id="answerABtn"></div>
-        <div id="answerBBtn"></div>
+      <button id="answerABtn" class="quiz-btn"></button>
+      <button id="answerBBtn" class="quiz-btn"></button>
+
+      <div id="results" class="hidden">
+        <h2 id="resultsText"></h2>
+        <a class="quiz-restart" href="#">Restart Quiz</a>
+      </div>
     </div>
   </div>
-</div>
 </div>
 
 
