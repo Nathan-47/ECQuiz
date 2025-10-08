@@ -18,6 +18,7 @@ const ecData = [
     {
         question: "Follow the Full EC claim process",
         id: 2,
+        resultA: "https://www.bcusu.com/advice/extenuatingcircumstances/full/"
     },
     {
         question: "You will need to claim for a Full Extenuating Circumstances extension",
