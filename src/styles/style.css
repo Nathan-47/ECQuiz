@@ -6,6 +6,16 @@ body {
 .container {
     --bs-gutter-x: 0.5rem;
 }
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800 !important;
+    margin-top: 2em !important;
+    margin-bottom: 0.5em !important;
+}
+h2 {
+    font-family: "Poppins", sans-serif !important;
+    margin-bottom: 1.5em !important;
+}
 
 /* accessibility focus on elements of pages */
 a:focus-visible,
@@ -178,7 +188,8 @@ select:focus-visible {
     font-family: "Poppins", sans-serif;
 }
 .start-intro-smaller {
-    font-family: "Arial", sans-seriF
+    font-family: "Arial", sans-serif;
+    margin-top: 2em;
 } 
 #startBtn {
     padding: 15px 40px;
@@ -212,6 +223,7 @@ select:focus-visible {
 .wrapper {width: 100% !important;}
 }
 
+
 @media screen and (max-width: 990px) {
 .wrapper {margin: inherit;}
 .button-wrapper {width: 100%;}
@@ -221,6 +233,7 @@ select:focus-visible {
 @media screen and (max-width: 768px) {
 .wrapper img {width: 100px;}
 }
+
 
 @media screen and (max-width: 600px) {
 .wrapper {
@@ -244,6 +257,7 @@ select:focus-visible {
 .restartBtn {width: 60%;}
 }
 
+
 @media screen and (max-width: 500px) {
 .wrapper img {
     width: 100px; 
@@ -258,10 +272,12 @@ select:focus-visible {
 }
 }
 
+
 @media screen and (max-width: 440px) {
 .wrapper img {width: 100px;}
 .pic-img {width: 350px !important;}
 }
+
 
 @media screen and (max-width: 400px) {
 .pic-img {width: 300px !important;}
@@ -269,28 +285,34 @@ select:focus-visible {
 .society-card img {display: flex;}
 }
 
+
 @media screen and (max-width: 360px) {
 .wrapper img {width: 100px;}
 .row {--bs-gutter-x: 0 !important;}
 body {padding: 5px;}
 }
 
+
 @media screen and (max-width: 340px) {
 .pic-img {width: 250px !important;}
 }
+
 
 @media screen and (max-width: 300px) {
 .start-logo {width: 200px;}
 .pic-img {width: 220px !important;}
 }
 
+
 @media screen and (max-width: 290px) {
 .wrapper img {width: 100px;}
 }
 
+
 @media screen and (max-width: 260px) {
 .pic-img {width: 200px !important;}
 }
+
 
 @media screen and (max-width: 200px) {
 .start-logo {width: 150px;}
