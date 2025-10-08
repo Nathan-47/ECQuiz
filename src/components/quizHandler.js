@@ -1,39 +1,67 @@
-// find data 
 let currentQuestion = ecData[0];
 
-// Question handler function
-const displayQuestion = (questionData) => {    
-    
-// Display question text
-document.getElementById("question").textContent = questionData.question;
+// Display a question or result at endpoint answers
+const displayQuestion = (questionData) => {
+  const questionEl = document.getElementById("question");
+  const answerABtn = document.getElementById("answerABtn");
+  const answerBBtn = document.getElementById("answerBBtn");
+  const resultsEl = document.getElementById("results");
+  const resultsText = document.getElementById("resultsText");
 
-// Button A
-const answerABtn = document.getElementById("answerABtn");
-answerABtn.textContent = questionData.answerA;
-if(questionData.answerA) {
-    answerABtn.onclick = () => {
-        handleAnswer(questionData.idNextQuestionA);
-    }
-}
+  // Reset visibility
+  resultsEl.classList.add("hidden");
+  questionEl.classList.remove("hidden");
+  answerABtn.classList.remove("hidden");
+  answerBBtn.classList.remove("hidden");
 
-// Button B
-const answerBBtn = document.getElementById("answerBBtn");
-answerBBtn.textContent = questionData.answerB;
-if(questionData.answerB) {
-    answerBBtn.onclick = () => {
-        handleAnswer(questionData.idNextQuestionB);
-    }
-}
-}
+  questionEl.textContent = questionData.question;
 
-// Handle answer function
+  // If no answers available show result
+  if (!questionData.answerA && !questionData.answerB) {
+    showResults(questionData);
+    return;
+  }
+
+  answerABtn.textContent = questionData.answerA;
+  answerBBtn.textContent = questionData.answerB;
+
+  answerABtn.onclick = () => handleAnswer(questionData.idNextQuestionA);
+  answerBBtn.onclick = () => handleAnswer(questionData.idNextQuestionB);
+};
+
+// Handle answer and go to next question or result at endpoint answers
 const handleAnswer = (idNextQuestion) => {
-    // find next question via id tag
-    const nextQuestion = ecData.find(q => q.id === idNextQuestion);
-    if (nextQuestion) {
-        currentQuestion = nextQuestion;
-        displayQuestion(nextQuestion); 
-    }
-}
+  const nextQuestion = ecData.find((q) => q.id === idNextQuestion);
+  if (nextQuestion) {
+    currentQuestion = nextQuestion;
+    displayQuestion(nextQuestion);
+  }
+};
+
+// Display results page 
+const showResults = (questionData) => {
+  const answerABtn = document.getElementById("answerABtn");
+  const answerBBtn = document.getElementById("answerBBtn");
+  const resultsEl = document.getElementById("results");
+  const resultsText = document.getElementById("resultsText");
+
+  // Hide the question and buttons
+  answerABtn.classList.add("hidden");
+  answerBBtn.classList.add("hidden");
+
+  // Clear any previous result content
+  resultsText.innerHTML = "";
+
+  if (questionData.resultA) {
+    const linkBtn = document.createElement("a");
+    linkBtn.href = questionData.resultA;
+    linkBtn.textContent = "Visit Page";
+    // linkBtn.target = "_blank";
+    linkBtn.classList.add("quiz-btn", "result-link");
+    resultsText.appendChild(linkBtn);
+  }
+
+  resultsEl.classList.remove("hidden");
+};
 
 displayQuestion(currentQuestion);
