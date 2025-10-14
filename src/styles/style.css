@@ -1,0 +1,319 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #e1f0f9 !important;
+}
+.container {
+    --bs-gutter-x: 0.5rem;
+}
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800 !important;
+    margin-top: 2em !important;
+    margin-bottom: 0.5em !important;
+}
+h2 {
+    font-family: "Poppins", sans-serif !important;
+    margin-bottom: 1.5em !important;
+}
+
+/* accessibility focus on elements of pages */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+    outline: 6px solid #0097f1;  
+    outline-offset: 3px;      
+    background-color: #fafafa;
+    color: #292929;
+    transition: outline-color 0.2s ease, background-color 0.2s ease;
+}
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.wrapper {
+    width: 100% !important;
+    margin: auto;
+    margin-top: 2em !important;
+    text-align: center;
+}
+.quiz-heading, .result-heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    font-size: 2rem;
+}
+.question {
+    font-size: 1.6rem !important; 
+    margin-bottom: 1.8em !important;
+    margin-top: 1.6em;
+    font-family: 'Poppins', sans-serif;
+}
+.image {
+    width: 100%;
+    height: auto;
+}
+.pic-img {
+    width: 400px !important;
+    border-radius: 12px;
+}
+.question-image {
+    max-width: 100%;
+    width: 200px !important;
+    height: auto;
+    margin: 10px 0;
+    display: block;
+}
+.quiz-length {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+}
+.quiz-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+}
+.hidden {display: none !important;}
+
+
+/* AOS  */
+.fade {
+  opacity: 0;
+  transform: translateY(20px); 
+}
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+/* buttons */
+#answerABtn, #answerBBtn {
+    background: #292929;
+    color: #fafafa;
+    margin: 5px;
+    border: 2px solid #292929;
+    display: flex;
+    cursor: pointer;
+    padding: 1.4rem; 
+    border-radius: 8px;
+    font-size: 1rem;
+    /* font-weight: 700; */
+}
+#answerABtn:hover, #answerBBtn:hover {
+    background: none;
+    color: #292929;
+    border: 2px solid #292929;
+    transition: 0.2s;
+}
+.button-wrapper {
+    gap: 1rem;
+    width: 60%;
+    display: inline-block;
+}
+
+
+/* results */
+.quiz-restart {
+    margin-bottom: 3em;
+    padding: 5px;
+    border-radius: 5px;
+    background: #fff793;
+    color: #292929;
+    font-weight: 700;
+    font-family: 'poppins';
+}
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.restartBtn {
+    padding: 15px 40px;
+    background: #F4AA82;
+    color: #292929;
+    border-radius: 100px;
+    text-decoration: 1px solid #F4AA82 underline;
+    display: flex;
+    width: 40%;
+    box-shadow: 3px 3px;
+    margin: 5px auto;
+    margin-top: 1em;
+    justify-content: center;
+    font-weight: 800;
+    cursor: pointer;
+    border: 2px solid #292929;
+    font-family: "Poppins", sans-serif;
+}
+.restartBtn:hover{
+    background: #F4AA82;
+    color: #292929;
+    transition: 0.2s;
+    box-shadow: 0px 0px;
+    border: 1px solid #292929;
+    transform: translateY(2px) !important;
+}
+.result-heading {margin-top: -1em;}
+.result-image {
+    width: 300px !important;
+    border-radius: 12px;
+    margin-bottom: -1.5em;
+}
+.option-btn.selected {
+  background-color: #F4AA82;
+  color: #292929;
+}
+.society-heading {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1em;
+}
+
+
+/* start screen */
+.start-wrapper {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    margin-top: 5em !important;
+}
+.col-sm-6 {width: 100% !important;}
+.start-logo {border-radius: 7px;}
+.start-intro {
+    font-size: 1.2rem;
+    margin-top: 1em;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.start-intro-smaller {
+    font-family: "Arial", sans-serif;
+    margin-top: 2em;
+} 
+#startBtn {
+    padding: 15px 40px;
+    background: #F4AA82;
+    color: #292929;
+    border-radius: 100px;
+    text-decoration: 1px solid #F4AA82 underline;
+    display: flex;
+    width: 100%;
+    box-shadow: 3px 3px;
+    margin: 5px auto;
+    margin-top: 1em;
+    justify-content: center;
+    font-weight: 800;
+    cursor: pointer;
+    border: 2px solid #292929;
+    font-family: "Poppins", sans-serif;
+}
+#startBtn:hover{
+    background: #F4AA82;
+    color: #292929;
+    transition: 0.2s;
+    box-shadow: 0px 0px;
+    border: 1px solid #292929;
+    transform: translateY(2px) !important;
+}
+
+
+/* mobile and tablet screens */
+@media screen and (max-width: 1024px) {
+.wrapper {width: 100% !important;}
+}
+
+
+@media screen and (max-width: 990px) {
+.wrapper {margin: inherit;}
+.button-wrapper {width: 100%;}
+
+}
+
+@media screen and (max-width: 768px) {
+.wrapper img {width: 100px;}
+}
+
+
+@media screen and (max-width: 600px) {
+.wrapper {
+    width: 100% !important;
+    margin-top: 1em !important;
+}
+.wrapper img {
+    width: 100px; 
+    text-align: center;
+    margin: 6px auto;
+}
+.options button {width: 100%;}
+.options {
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+.start-wrapper {margin-top: 1em !important;}
+.restartBtn {width: 60%;}
+}
+
+
+@media screen and (max-width: 500px) {
+.wrapper img {
+    width: 100px; 
+    text-align: center;
+}
+.options {
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+}
+}
+
+
+@media screen and (max-width: 440px) {
+.wrapper img {width: 100px;}
+.pic-img {width: 350px !important;}
+}
+
+
+@media screen and (max-width: 400px) {
+.pic-img {width: 300px !important;}
+.restartBtn {width: 100%;}
+.society-card img {display: flex;}
+}
+
+
+@media screen and (max-width: 360px) {
+.wrapper img {width: 100px;}
+.row {--bs-gutter-x: 0 !important;}
+body {padding: 5px;}
+}
+
+
+@media screen and (max-width: 340px) {
+.pic-img {width: 250px !important;}
+}
+
+
+@media screen and (max-width: 300px) {
+.start-logo {width: 200px;}
+.pic-img {width: 220px !important;}
+}
+
+
+@media screen and (max-width: 290px) {
+.wrapper img {width: 100px;}
+}
+
+
+@media screen and (max-width: 260px) {
+.pic-img {width: 200px !important;}
+}
+
+
+@media screen and (max-width: 200px) {
+.start-logo {width: 150px;}
+}
