@@ -44,7 +44,11 @@ select:focus-visible {
     font-size: 2rem;
 }
 .question {
+<<<<<<< HEAD
     font-size: 1.6rem !important; 
+=======
+    font-size: 1.35rem !important; 
+>>>>>>> 5d53e02cbef0c5c4245b1fdd0bed8603d0476dbf
     margin-bottom: 1.8em !important;
     margin-top: 1.6em;
     font-family: 'Poppins', sans-serif;
