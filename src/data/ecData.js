@@ -23,6 +23,7 @@ const ecData = [
     {
         question: "You will need to claim for a Full Extenuating Circumstances extension",
         id: 3,
+        resultA: "https://www.bcusu.com/advice/extenuatingcircumstances/full/"
     },
     {
         question: "Can you easily access independent evidence of your circumstances?",
@@ -35,9 +36,11 @@ const ecData = [
     {
         question: "Choose a Full EC extension if you feel you may need a Self-Certification extension later in the same semester",
         id: 5,
+        resultA: "https://www.bcusu.com/advice/extenuatingcircumstances/full/"
     },
     {
         question: "It is advisable to choose a Self-Certification EC claim as this does not require evidence",
         id: 6,
+        resultA: "https://www.bcusu.com/advice/extenuatingcircumstances/selfcert/"
     },
 ]
