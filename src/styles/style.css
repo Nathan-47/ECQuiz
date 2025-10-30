@@ -122,10 +122,12 @@ select:focus-visible {
     margin-bottom: 3em;
     padding: 5px;
     border-radius: 5px;
-    background: #fff793;
-    color: #292929;
+    background: #292929;
+    color: #fafafa;
+    padding: 10px 20px;
     font-weight: 700;
     font-family: 'poppins';
+    text-decoration: none;
 }
 .result {
     margin-top: 20px;
@@ -175,7 +177,17 @@ select:focus-visible {
     display: flex;
     justify-content: center;
     margin-bottom: 1em;
+    background: #fff59b;
+    color: #292929;
+    padding: 10px 20px;
+    width: 70%;
 }
+.result-link:hover {
+    background: none;
+    color: #292929; 
+    transition: 0.2s;
+}
+h2 {font-size: 1.4rem !important;}
 
 
 /* start screen */
@@ -261,6 +273,8 @@ select:focus-visible {
 }
 .start-wrapper {margin-top: 1em !important;}
 .restartBtn {width: 60%;}
+.question {font-size: 1.1rem !important;}
+.result-link {font-size: 1.2rem;}
 }
 
 
@@ -276,6 +290,12 @@ select:focus-visible {
     grid-template-columns: repeat(1, 1fr);
     gap: 0px;
 }
+.question {text-align: left;}
+.result-link {width: 90%;}
+.quiz-restart {
+    display: inline-grid;
+    justify-content: center;
+}
 }
 
 
@@ -289,6 +309,7 @@ select:focus-visible {
 .pic-img {width: 300px !important;}
 .restartBtn {width: 100%;}
 .society-card img {display: flex;}
+.result-link {float: initial;}
 }
 
 
