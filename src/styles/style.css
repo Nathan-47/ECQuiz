@@ -170,6 +170,12 @@ select:focus-visible {
     font-family: "Poppins", sans-serif;
     margin-bottom: 1em;
 }
+.result-link {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
 
 
 /* start screen */
