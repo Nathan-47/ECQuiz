@@ -50,12 +50,21 @@ const showResults = (questionData) => {
   answerBBtn.classList.add("hidden");
 
   // Clear any previous result content
-  resultsText.innerHTML = "";
+  // resultsText.innerHTML = "";
 
   if (questionData.resultA) {
     const linkBtn = document.createElement("a");
     linkBtn.href = questionData.resultA;
-    linkBtn.textContent = "Visit Page";
+    linkBtn.textContent = `${questionData.linkText}`
+    // linkBtn.target = "_blank";
+    linkBtn.classList.add("quiz-btn", "result-link");
+    resultsText.appendChild(linkBtn);
+  }
+
+  if (questionData.resultB) {
+    const linkBtn = document.createElement("a");
+    linkBtn.href = questionData.resultA;
+    linkBtn.textContent = `${questionData.linkTextB}`
     // linkBtn.target = "_blank";
     linkBtn.classList.add("quiz-btn", "result-link");
     resultsText.appendChild(linkBtn);
