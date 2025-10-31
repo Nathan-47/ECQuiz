@@ -63,7 +63,7 @@ const showResults = (questionData) => {
 
   if (questionData.resultB) {
     const linkBtn = document.createElement("a");
-    linkBtn.href = questionData.resultA;
+    linkBtn.href = questionData.resultB;
     linkBtn.textContent = `${questionData.linkTextB}`
     // linkBtn.target = "_blank";
     linkBtn.classList.add("quiz-btn", "result-link");
