@@ -256,7 +256,7 @@ h2 {
     background: #F4AA82;
     color: #292929;
     border-radius: 100px;
-    text-decoration: 1px solid #F4AA82 underline;
+    text-decoration: none !important;
     display: flex;
     width: 100%;
     box-shadow: 3px 3px;
@@ -267,6 +267,10 @@ h2 {
     cursor: pointer;
     border: 2px solid #292929;
     font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 #startBtn:hover {
