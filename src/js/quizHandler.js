@@ -38,7 +38,7 @@ const handleAnswer = (idNextQuestion) => {
   }
 };
 
-// Display results page 
+// Display results page
 const showResults = (questionData) => {
   const answerABtn = document.getElementById("answerABtn");
   const answerBBtn = document.getElementById("answerBBtn");
@@ -49,14 +49,10 @@ const showResults = (questionData) => {
   answerABtn.classList.add("hidden");
   answerBBtn.classList.add("hidden");
 
-  // Clear any previous result content
-  // resultsText.innerHTML = "";
-
   if (questionData.resultA) {
     const linkBtn = document.createElement("a");
     linkBtn.href = questionData.resultA;
-    linkBtn.textContent = `${questionData.linkText}`
-    // linkBtn.target = "_blank";
+    linkBtn.textContent = `${questionData.linkText}`;
     linkBtn.classList.add("quiz-btn", "result-link");
     resultsText.appendChild(linkBtn);
   }
@@ -64,8 +60,7 @@ const showResults = (questionData) => {
   if (questionData.resultB) {
     const linkBtn = document.createElement("a");
     linkBtn.href = questionData.resultB;
-    linkBtn.textContent = `${questionData.linkTextB}`
-    // linkBtn.target = "_blank";
+    linkBtn.textContent = `${questionData.linkTextB}`;
     linkBtn.classList.add("quiz-btn", "result-link");
     resultsText.appendChild(linkBtn);
   }
